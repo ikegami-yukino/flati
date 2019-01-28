@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 def flatten(iterable, ignore=None):
     """Flatten nested iterable object
     Args:
