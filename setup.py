@@ -14,11 +14,11 @@ setup(
     version=version,
     license='MIT License',
     platforms=['POSIX', 'Windows', 'Unix', 'MacOS'],
-    description='Flatten nested iterable object',
+    description='Flatten nested iterable object (Pure-Python)',
     author='Yukino Ikegami',
     author_email='yknikgm@gmail.com',
     url='https://github.com/ikegami-yukino/flati',
-    keywords=['flatten', 'generator'],
+    keywords=['flatten', 'generator', 'pure-python'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
