@@ -37,5 +37,6 @@ setup(
     data_files=[('', ['README.rst', 'CHANGES.rst'])],
     long_description='%s\n\n%s' % (open('README.rst', encoding='utf8').read(),
                                    open('CHANGES.rst', encoding='utf8').read()),
-    test_suite = 'nose.collector'
+    tests_require=['nose'],
+    test_suite='nose.collector'
 )
