@@ -42,6 +42,12 @@ If you want to flatten numpy.ndarray, I recommend using following methods:
 * ndarray.reshape(-1)
 * ndarray.flatten()  # This method is a bit slow because it makes a copy
 
+Contribution
+=============
+Contributions are welcome.
+
+See https://github.com/ikegami-yukino/flati/blob/master/CONTRIBUTING.md
+
 
 .. |travis| image:: https://travis-ci.org/ikegami-yukino/flati.svg?branch=master
     :target: https://travis-ci.org/ikegami-yukino/flati
