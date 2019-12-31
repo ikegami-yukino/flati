@@ -24,5 +24,4 @@ def flatten(iterable, ignore=None):
         else:
             yield x
 
-    for x in iterable:
-        yield from _flatten(x, ignore)
+    yield from _flatten(iterable, ignore)
