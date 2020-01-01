@@ -4,6 +4,7 @@ flati
 
 Flatten nested iterable object (Pure-Python implementation)
 
+Japanese document is available: https://qiita.com/yukinoi/items/9570c76034c28bdae0a8
 
 Installation
 ==============
