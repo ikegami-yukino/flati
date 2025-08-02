@@ -1,6 +1,6 @@
 flati
 ==========
-|travis| |coveralls| |pyversion| |version| |license|
+|pyversion| |version| |license|
 
 Flatten nested iterable object (Pure-Python implementation)
 
@@ -49,14 +49,6 @@ Contributions are welcome.
 
 See https://github.com/ikegami-yukino/flati/blob/master/CONTRIBUTING.md
 
-
-.. |travis| image:: https://travis-ci.org/ikegami-yukino/flati.svg?branch=master
-    :target: https://travis-ci.org/ikegami-yukino/flati
-    :alt: travis-ci.org
-
-.. |coveralls| image:: https://coveralls.io/repos/ikegami-yukino/flati/badge.svg?branch=master&service=github
-    :target: https://coveralls.io/github/ikegami-yukino/flati?branch=master
-    :alt: coveralls.io
 
 .. |pyversion| image:: https://img.shields.io/pypi/pyversions/flati.svg
 
