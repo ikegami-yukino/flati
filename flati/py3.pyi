@@ -1,0 +1,3 @@
+import typing
+
+def flatten(iterable: typing.Iterable, ignore: typing.Optional[typing.Type] = None) -> typing.Generator: ...
