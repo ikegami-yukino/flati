@@ -3,11 +3,13 @@
 
 def flatten(iterable, ignore=None):
     """Flatten nested iterable object
+
     Args:
-        iterable_obejct (iterable) : required
-        ignore (type or tuple) : optional
-    Return:
-        flattend (generator)
+        iterable: An iterable to flatten.
+        ignore: A type or tuple of types to not flatten. Defaults to None.
+
+    Yields:
+        The items from the flattened iterable.
 
     >>> iterable = [(1, 2, 3), (4, (5, 6))]
     >>> list(flatten(iterable))

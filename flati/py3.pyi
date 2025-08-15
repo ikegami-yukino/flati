@@ -1,3 +1,9 @@
-import typing
+from typing import Any, Generator, Iterable, Type, Union, Optional
 
-def flatten(iterable: typing.Iterable, ignore: typing.Optional[typing.Type] = None) -> typing.Generator: ...
+_IgnoreType = Union[str, Type[Any] | tuple[Type[Any], ...]]
+
+
+def flatten(
+    iterable: Iterable[Any],
+    ignore: Optional[_IgnoreType] = None,
+) -> Generator[Any, None, None]: ...
