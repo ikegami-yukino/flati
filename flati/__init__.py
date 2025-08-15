@@ -26,8 +26,6 @@ else:
     from . import py3
     flatten = py3.flatten
 
-VERSION = (0, 2, 0)
-__version__ = '0.2.0'
 
 def flatten_non_str(iterable, ignore=None):
     """Flatten nested iterable object, ignoring strings.
@@ -61,4 +59,8 @@ def flatten_non_str(iterable, ignore=None):
             ignore = ignore_types + (str,)
     yield from flatten(iterable, ignore=ignore)
 
+
+VERSION = (0, 2, 1)
+__version__ = '0.2.1'
 __license__ = 'MIT License'
+__all__ = ['flatten', '__version__', '__license__', 'flatten_non_str']
