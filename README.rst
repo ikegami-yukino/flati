@@ -35,6 +35,11 @@ Usage
   list(flati.flatten(iterable, ignore=str))
   # => ['abc', 'def', 'g', 'hi']
 
+  # The flatten_non_str function is alias of "flatten(iterable, ignore=str)"
+  iterable = [('abc'), ('def', ('g', 'hi'))]
+  list(flati.flatten_non_str(iterable))
+  # => ['abc', 'def', 'g', 'hi']
+
 Tips
 ------
 If you want to flatten numpy.ndarray, I recommend using following methods:

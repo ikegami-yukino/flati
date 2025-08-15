@@ -10,3 +10,17 @@ def test_flatten():
     iterable = [('abc'), ('def', ('g', 'hi'))]
     expected = ['abc', 'def', 'g', 'hi']
     assert list(flati.flatten(iterable, ignore=str)) == expected
+
+
+def test_flatten_non_str():
+    iterable = [('abc'), ('def', ('g', 'hi'))]
+    expected = ['abc', 'def', 'g', 'hi']
+    assert list(flati.flatten_non_str(iterable)) == expected
+
+    iterable = ['abc', ['def', ('g', 'hi')]]
+    expected = ['abc', 'def', ('g', 'hi')]
+    assert list(flati.flatten_non_str(iterable, ignore=tuple)) == expected
+
+    iterable = ['abc', ['def', set(('g', 'hi')), ('j', 'kl')]]
+    expected = ['abc', 'def', set(('g', 'hi')), ('j', 'kl')]
+    assert list(flati.flatten_non_str(iterable, ignore=(set, tuple))) == expected

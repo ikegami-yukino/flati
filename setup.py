@@ -2,11 +2,12 @@
 from codecs import open
 import os
 import re
-from setuptools import setup
+from setuptools import setup  # type: ignore
 
 with open(os.path.join('flati', '__init__.py'), 'r', encoding='utf8') as f:
     version = re.compile(
-        r".*__version__ = '(.*?)'", re.S).match(f.read()).group(1)
+        r".*__version__ = '(.*?)'", re.S).match(f.read()).group(1)  # type: ignore
+
 
 setup(
     name='flati',
@@ -33,10 +34,16 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
     ],
     data_files=[('', ['README.rst', 'CHANGES.rst'])],
     long_description='%s\n\n%s' % (open('README.rst', encoding='utf8').read(),
                                    open('CHANGES.rst', encoding='utf8').read()),
-    tests_require=['nose'],
-    test_suite='nose.collector'
+    tests_require=['pytest'],
+    test_suite='pytest'
 )
