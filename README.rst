@@ -1,6 +1,7 @@
 flati
 ==========
-|pyversion| |version| |license|
+
+|pyversion| |version| |license| |download| |nowarnonukes|
 
 Flatten nested iterable object (Pure-Python implementation)
 
@@ -25,7 +26,7 @@ Usage
   list(flati.flatten(iterable))
   # => [1, 2, 3, 4, 5, 6]
 
-  # flati.flatten() returns a generator
+  # The flati.flatten function returns a generator
   import types
   isinstance(flati.flatten(iterable), types.GeneratorType)
   # => True
@@ -56,6 +57,8 @@ See https://github.com/ikegami-yukino/flati/blob/master/CONTRIBUTING.md
 
 
 .. |pyversion| image:: https://img.shields.io/pypi/pyversions/flati.svg
+    :target: http://pypi.python.org/pypi/flati/
+    :alt: Python version
 
 .. |version| image:: https://img.shields.io/pypi/v/flati.svg
     :target: http://pypi.python.org/pypi/flati/
@@ -64,3 +67,10 @@ See https://github.com/ikegami-yukino/flati/blob/master/CONTRIBUTING.md
 .. |license| image:: https://img.shields.io/pypi/l/flati.svg
     :target: http://pypi.python.org/pypi/flati/
     :alt: license
+
+.. |download| image:: https://static.pepy.tech/personalized-badge/flati?period=total&units=international_system&left_color=black&right_color=blue&left_text=Downloads
+    :target: https://pepy.tech/project/flati
+    :alt: download
+
+.. |nowarnonukes| image:: https://img.shields.io/badge/NO%20WAR-NO%20NUKES-brightgreen
+    :alt: NO WAR

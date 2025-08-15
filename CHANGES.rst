@@ -1,6 +1,10 @@
 CHANGES
 =======
 
+0.2.1 (2025-08-15)
+------------------
+- Add `flatten_non_str` function that alias of `flatten(iterable, ignore=str)`
+
 0.2.0 (2025-08-02)
 ------------------
 
